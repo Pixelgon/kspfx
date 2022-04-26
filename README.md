@@ -6,7 +6,7 @@ pip install baseconvert
 ```
 # Jak na to?
 Ve složce, kde máme Base convert nainstalovaný (Obvykle venv/lib/site-packages/baseconvert) upravíme soubor baseconvert.py.
-Jediné co stačí změnit tento řádek
+Jediné co stačí změnit je tento řádek
 ```
 from fractions import gcd
 ```
