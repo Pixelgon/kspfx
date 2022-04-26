@@ -1,9 +1,10 @@
 from baseconvert.baseconvert import base
-
-origin = open("01.in", "r") # Nacetem file cislem
-output = open("01.out", "w") # Nactem/vytvorime file na output
-
-num = tuple(map(int, origin.readline().strip())) # precteme vstup, prevedeme na tuple
+# Nacetem file cislem
+origin = open("01.in", "r")
+# Nactem/vytvorime file na output
+output = open("01.out", "w")
+# precteme vstup, prevedeme na tuple
+num = tuple(map(int, origin.readline().strip()))
 zaklad_soustavy = 2
 zaklad_soustavy_max = 0
 pocet_nul_max = 0
@@ -13,7 +14,8 @@ while True:
     kolekce = base(num, 10, zaklad_soustavy)
     pocet_nul = 0
     zaklad_soustavy = zaklad_soustavy + 1
-    for i in kolekce: # Pocitame nuly
+    # Pocitame nuly
+    for i in kolekce:
         if i == 0:
             pocet_nul = pocet_nul + 1
         else:
